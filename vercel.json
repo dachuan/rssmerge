@@ -4,7 +4,7 @@
   ],
   "functions": {
     "merge_rss": {
-      "maxDuration": 60000
+      "maxDuration": 900
     }
   }
 }
