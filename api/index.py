@@ -4,6 +4,10 @@ from feedgen.feed import FeedGenerator
 
 app = Flask(__name__)
 
+@app.route('/hello')
+def hello():
+    return "hello"
+
 @app.route('/')
 def merge_rss():
     # 创建一个新的RSS源
