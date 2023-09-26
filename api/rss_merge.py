@@ -9,7 +9,7 @@ def merge_rss():
     # 创建一个新的RSS源
     fg = FeedGenerator()
     fg.title('合并的RSS源')
-    fg.link(href='https://example.com', rel='alternate')
+    fg.link(href='https://rssmerge-bhsnd63v9-dachuan.vercel.app/api', rel='alternate')
     fg.description('这是合并的RSS源')
 
     # 添加多个RSS源
