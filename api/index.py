@@ -13,11 +13,15 @@ def merge_rss():
     # 创建一个新的RSS源
     fg = FeedGenerator()
     fg.title('合并的RSS源')
-    fg.link(href='https://rssmerge-bhsnd63v9-dachuan.vercel.app/api', rel='alternate')
+    fg.link(href='https://rssmerge.vercel.app', rel='alternate')
     fg.description('这是合并的RSS源')
 
     # 添加多个RSS源
-    rss_urls = ['https://utgd.net/feed',  'https://blog.jimmylv.info/pages/atom.xml']
+    rss_urls = [
+            'https://utgd.net/feed',
+            'https://blog.jimmylv.info/pages/atom.xml',
+            'https://shyrz.me/rss/'
+            ]
     for rss_url in rss_urls:
         feed = feedparser.parse(rss_url)
         for entry in feed.entries:
