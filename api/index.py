@@ -28,5 +28,5 @@ def merge_rss():
     # 返回RSS内容
     return Response(rss_str, content_type='application/rss+xml')
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#    app.run()
